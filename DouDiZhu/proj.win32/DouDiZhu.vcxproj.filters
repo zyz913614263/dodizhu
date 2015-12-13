@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{534b3b2f-7bc6-41b4-a668-c47b26e285bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\sound">
+      <UniqueIdentifier>{30928ca4-ecb3-4f86-bab4-0ffe078251c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Poker.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Tool.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Music.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppMacros.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Global.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Poker.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Tool.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Music.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\bk.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\poker.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\mz_tiles.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\dou.jpg">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Resources\strings.xml">
+      <Filter>Resources</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\sound\audio_warn.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\boombeffect.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\chupai.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\get_glod.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\lose.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\lot_end.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\lot_ing.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_3.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_4.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_5.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_6.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_7.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_8.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_9.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_10.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_11.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_12.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_13.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_14.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_15.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_16.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_1_17.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_3.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_4.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_5.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_6.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_7.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_8.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_9.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_10.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_11.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_12.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_13.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_14.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_2_15.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple3.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple4.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple5.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple6.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple7.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple8.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple9.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple10.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple11.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple12.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple13.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple14.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\m_tuple15.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\mg_bg.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_1fen.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_2fen.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_3dai0.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_3dai1.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_3dai2.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_3fen.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_4dai2.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_4dai22.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_bomb.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_bujiabei.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_bujiao.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_feiji.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_jiabei.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_liandui.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_pass.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_shunzi.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nan_wangzha.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_1fen.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_2fen.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_3dai0.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_3dai1.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_3dai2.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_3fen.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_4dai2.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_4dai22.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_bomb.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_bujiabei.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_bujiao.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_buyao.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_feiji.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_jiabei.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_liandui.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_pass.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_shunzi.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\nv_wangzha.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\outcard.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\pass1.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\planeeffect.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\start.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_3.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_4.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_5.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_6.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_7.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_8.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_9.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_10.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_11.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_12.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_13.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_14.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_15.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_16.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_1_17.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_3.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_4.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_5.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_6.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_7.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_8.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_9.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_10.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_11.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_12.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_13.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_14.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_2_15.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple3.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple4.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple5.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple6.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple7.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple8.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple9.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple10.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple11.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple12.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple13.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple14.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\w_tuple15.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\warn.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\win.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+    <None Include="..\Resources\sound\winchoudi.ogg">
+      <Filter>Resources\sound</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Resources\sound\opening_sound.mp3">
+      <Filter>Resources\sound</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

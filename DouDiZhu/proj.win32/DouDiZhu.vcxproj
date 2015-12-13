@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;pthreadVCE2.lib;websockets.lib;libiconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);$(cocoslib);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;pthreadVCE2.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\GameScene.cpp" />
+    <ClCompile Include="..\Classes\Music.cpp" />
+    <ClCompile Include="..\Classes\Player.cpp" />
+    <ClCompile Include="..\Classes\Poker.cpp" />
+    <ClCompile Include="..\Classes\Tool.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\AppMacros.h" />
+    <ClInclude Include="..\Classes\GameScene.h" />
+    <ClInclude Include="..\Classes\Global.h" />
+    <ClInclude Include="..\Classes\Music.h" />
+    <ClInclude Include="..\Classes\Player.h" />
+    <ClInclude Include="..\Classes\Poker.h" />
+    <ClInclude Include="..\Classes\Tool.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\bk.png" />
+    <Image Include="..\Resources\CloseNormal.png" />
+    <Image Include="..\Resources\CloseSelected.png" />
+    <Image Include="..\Resources\dou.jpg" />
+    <Image Include="..\Resources\HelloWorld.png" />
+    <Image Include="..\Resources\mz_tiles.png" />
+    <Image Include="..\Resources\poker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Resources\strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\sound\audio_warn.ogg" />
+    <None Include="..\Resources\sound\boombeffect.ogg" />
+    <None Include="..\Resources\sound\chupai.ogg" />
+    <None Include="..\Resources\sound\get_glod.ogg" />
+    <None Include="..\Resources\sound\lose.ogg" />
+    <None Include="..\Resources\sound\lot_end.ogg" />
+    <None Include="..\Resources\sound\lot_ing.ogg" />
+    <None Include="..\Resources\sound\mg_bg.ogg" />
+    <None Include="..\Resources\sound\m_1_10.ogg" />
+    <None Include="..\Resources\sound\m_1_11.ogg" />
+    <None Include="..\Resources\sound\m_1_12.ogg" />
+    <None Include="..\Resources\sound\m_1_13.ogg" />
+    <None Include="..\Resources\sound\m_1_14.ogg" />
+    <None Include="..\Resources\sound\m_1_15.ogg" />
+    <None Include="..\Resources\sound\m_1_16.ogg" />
+    <None Include="..\Resources\sound\m_1_17.ogg" />
+    <None Include="..\Resources\sound\m_1_3.ogg" />
+    <None Include="..\Resources\sound\m_1_4.ogg" />
+    <None Include="..\Resources\sound\m_1_5.ogg" />
+    <None Include="..\Resources\sound\m_1_6.ogg" />
+    <None Include="..\Resources\sound\m_1_7.ogg" />
+    <None Include="..\Resources\sound\m_1_8.ogg" />
+    <None Include="..\Resources\sound\m_1_9.ogg" />
+    <None Include="..\Resources\sound\m_2_10.ogg" />
+    <None Include="..\Resources\sound\m_2_11.ogg" />
+    <None Include="..\Resources\sound\m_2_12.ogg" />
+    <None Include="..\Resources\sound\m_2_13.ogg" />
+    <None Include="..\Resources\sound\m_2_14.ogg" />
+    <None Include="..\Resources\sound\m_2_15.ogg" />
+    <None Include="..\Resources\sound\m_2_3.ogg" />
+    <None Include="..\Resources\sound\m_2_4.ogg" />
+    <None Include="..\Resources\sound\m_2_5.ogg" />
+    <None Include="..\Resources\sound\m_2_6.ogg" />
+    <None Include="..\Resources\sound\m_2_7.ogg" />
+    <None Include="..\Resources\sound\m_2_8.ogg" />
+    <None Include="..\Resources\sound\m_2_9.ogg" />
+    <None Include="..\Resources\sound\m_tuple10.ogg" />
+    <None Include="..\Resources\sound\m_tuple11.ogg" />
+    <None Include="..\Resources\sound\m_tuple12.ogg" />
+    <None Include="..\Resources\sound\m_tuple13.ogg" />
+    <None Include="..\Resources\sound\m_tuple14.ogg" />
+    <None Include="..\Resources\sound\m_tuple15.ogg" />
+    <None Include="..\Resources\sound\m_tuple3.ogg" />
+    <None Include="..\Resources\sound\m_tuple4.ogg" />
+    <None Include="..\Resources\sound\m_tuple5.ogg" />
+    <None Include="..\Resources\sound\m_tuple6.ogg" />
+    <None Include="..\Resources\sound\m_tuple7.ogg" />
+    <None Include="..\Resources\sound\m_tuple8.ogg" />
+    <None Include="..\Resources\sound\m_tuple9.ogg" />
+    <None Include="..\Resources\sound\nan_1fen.ogg" />
+    <None Include="..\Resources\sound\nan_2fen.ogg" />
+    <None Include="..\Resources\sound\nan_3dai0.ogg" />
+    <None Include="..\Resources\sound\nan_3dai1.ogg" />
+    <None Include="..\Resources\sound\nan_3dai2.ogg" />
+    <None Include="..\Resources\sound\nan_3fen.ogg" />
+    <None Include="..\Resources\sound\nan_4dai2.ogg" />
+    <None Include="..\Resources\sound\nan_4dai22.ogg" />
+    <None Include="..\Resources\sound\nan_bomb.ogg" />
+    <None Include="..\Resources\sound\nan_bujiabei.ogg" />
+    <None Include="..\Resources\sound\nan_bujiao.ogg" />
+    <None Include="..\Resources\sound\nan_feiji.ogg" />
+    <None Include="..\Resources\sound\nan_jiabei.ogg" />
+    <None Include="..\Resources\sound\nan_liandui.ogg" />
+    <None Include="..\Resources\sound\nan_pass.ogg" />
+    <None Include="..\Resources\sound\nan_shunzi.ogg" />
+    <None Include="..\Resources\sound\nan_wangzha.ogg" />
+    <None Include="..\Resources\sound\nv_1fen.ogg" />
+    <None Include="..\Resources\sound\nv_2fen.ogg" />
+    <None Include="..\Resources\sound\nv_3dai0.ogg" />
+    <None Include="..\Resources\sound\nv_3dai1.ogg" />
+    <None Include="..\Resources\sound\nv_3dai2.ogg" />
+    <None Include="..\Resources\sound\nv_3fen.ogg" />
+    <None Include="..\Resources\sound\nv_4dai2.ogg" />
+    <None Include="..\Resources\sound\nv_4dai22.ogg" />
+    <None Include="..\Resources\sound\nv_bomb.ogg" />
+    <None Include="..\Resources\sound\nv_bujiabei.ogg" />
+    <None Include="..\Resources\sound\nv_bujiao.ogg" />
+    <None Include="..\Resources\sound\nv_buyao.ogg" />
+    <None Include="..\Resources\sound\nv_feiji.ogg" />
+    <None Include="..\Resources\sound\nv_jiabei.ogg" />
+    <None Include="..\Resources\sound\nv_liandui.ogg" />
+    <None Include="..\Resources\sound\nv_pass.ogg" />
+    <None Include="..\Resources\sound\nv_shunzi.ogg" />
+    <None Include="..\Resources\sound\nv_wangzha.ogg" />
+    <None Include="..\Resources\sound\outcard.ogg" />
+    <None Include="..\Resources\sound\pass1.ogg" />
+    <None Include="..\Resources\sound\planeeffect.ogg" />
+    <None Include="..\Resources\sound\start.ogg" />
+    <None Include="..\Resources\sound\warn.ogg" />
+    <None Include="..\Resources\sound\win.ogg" />
+    <None Include="..\Resources\sound\winchoudi.ogg" />
+    <None Include="..\Resources\sound\w_1_10.ogg" />
+    <None Include="..\Resources\sound\w_1_11.ogg" />
+    <None Include="..\Resources\sound\w_1_12.ogg" />
+    <None Include="..\Resources\sound\w_1_13.ogg" />
+    <None Include="..\Resources\sound\w_1_14.ogg" />
+    <None Include="..\Resources\sound\w_1_15.ogg" />
+    <None Include="..\Resources\sound\w_1_16.ogg" />
+    <None Include="..\Resources\sound\w_1_17.ogg" />
+    <None Include="..\Resources\sound\w_1_3.ogg" />
+    <None Include="..\Resources\sound\w_1_4.ogg" />
+    <None Include="..\Resources\sound\w_1_5.ogg" />
+    <None Include="..\Resources\sound\w_1_6.ogg" />
+    <None Include="..\Resources\sound\w_1_7.ogg" />
+    <None Include="..\Resources\sound\w_1_8.ogg" />
+    <None Include="..\Resources\sound\w_1_9.ogg" />
+    <None Include="..\Resources\sound\w_2_10.ogg" />
+    <None Include="..\Resources\sound\w_2_11.ogg" />
+    <None Include="..\Resources\sound\w_2_12.ogg" />
+    <None Include="..\Resources\sound\w_2_13.ogg" />
+    <None Include="..\Resources\sound\w_2_14.ogg" />
+    <None Include="..\Resources\sound\w_2_15.ogg" />
+    <None Include="..\Resources\sound\w_2_3.ogg" />
+    <None Include="..\Resources\sound\w_2_4.ogg" />
+    <None Include="..\Resources\sound\w_2_5.ogg" />
+    <None Include="..\Resources\sound\w_2_6.ogg" />
+    <None Include="..\Resources\sound\w_2_7.ogg" />
+    <None Include="..\Resources\sound\w_2_8.ogg" />
+    <None Include="..\Resources\sound\w_2_9.ogg" />
+    <None Include="..\Resources\sound\w_tuple10.ogg" />
+    <None Include="..\Resources\sound\w_tuple11.ogg" />
+    <None Include="..\Resources\sound\w_tuple12.ogg" />
+    <None Include="..\Resources\sound\w_tuple13.ogg" />
+    <None Include="..\Resources\sound\w_tuple14.ogg" />
+    <None Include="..\Resources\sound\w_tuple15.ogg" />
+    <None Include="..\Resources\sound\w_tuple3.ogg" />
+    <None Include="..\Resources\sound\w_tuple4.ogg" />
+    <None Include="..\Resources\sound\w_tuple5.ogg" />
+    <None Include="..\Resources\sound\w_tuple6.ogg" />
+    <None Include="..\Resources\sound\w_tuple7.ogg" />
+    <None Include="..\Resources\sound\w_tuple8.ogg" />
+    <None Include="..\Resources\sound\w_tuple9.ogg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Resources\sound\opening_sound.mp3" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
