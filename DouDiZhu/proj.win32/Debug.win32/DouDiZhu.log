@@ -1,24 +1,14 @@
-﻿生成启动时间为 2015/12/13 20:41:57。
-     1>项目“D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\DouDiZhu.vcxproj”在节点 2 上(Build 个目标)。
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\..\..\..\cocos2dx" /I"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\..\..\..\cocos2dx\include" /I"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\..\..\..\cocos2dx\kazmath\include" /I"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\..\..\..\cocos2dx\platform\win32" /I"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\..\..\..\cocos2dx\platform\third_party\win32" /I"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\..\..\..\external" /I"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\..\..\..\external\chipmunk\include\chipmunk" /I"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\..\..\..\CocosDenshion\include" /I"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\..\..\..\extensions" /I..\Classes /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\Music.cpp
-         Music.cpp
-       PreLinkEvent:
-         if not exist "D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\Debug.win32\" mkdir "D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\Debug.win32\"
-         xcopy /Y /Q "D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\..\..\..\external\libwebsockets\win32\lib\*.*" "D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\Debug.win32\"
+﻿生成启动时间为 2015/12/28 16:08:39。
+     1>项目“E:\git\dodizhu\DouDiZhu\proj.win32\DouDiZhu.vcxproj”在节点 2 上(Build 个目标)。
+     1>PreLinkEvent:
+         if not exist "E:\git\dodizhu\DouDiZhu\proj.win32\Debug.win32\" mkdir "E:\git\dodizhu\DouDiZhu\proj.win32\Debug.win32\"
+         xcopy /Y /Q "E:\cocos2d-x\external\libwebsockets\win32\lib\*.*" "E:\git\dodizhu\DouDiZhu\proj.win32\Debug.win32\"
          :VCEnd
          复制了 2 个文件
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\Debug.win32\DouDiZhu.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\Debug.win32\\" /LIBPATH:"D:\cocos2d-x-2.2.6\Debug.win32" /LIBPATH:"D:\cocos2d-x-2.2.6\Release.win32" libExtensions.lib libcocos2d.lib libCocosDenshion.lib opengl32.lib glew32.lib libBox2d.lib libchipmunk.lib libcurl_imp.lib pthreadVCE2.lib websockets.lib libiconv.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\Debug.win32\DouDiZhu.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\Debug.win32\DouDiZhu.lib" /MACHINE:X86 /SAFESEH Debug.win32\AppDelegate.obj
-         Debug.win32\GameScene.obj
-         Debug.win32\Music.obj
-         Debug.win32\Player.obj
-         Debug.win32\Poker.obj
-         Debug.win32\Tool.obj
-         Debug.win32\main.obj
-         DouDiZhu.vcxproj -> D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\Debug.win32\DouDiZhu.exe
-     1>已完成生成项目“D:\cocos2d-x-2.2.6\projects\DouDiZhu\proj.win32\DouDiZhu.vcxproj”(Build 个目标)的操作。
+         DouDiZhu.vcxproj -> E:\git\dodizhu\DouDiZhu\proj.win32\Debug.win32\DouDiZhu.exe
+     1>已完成生成项目“E:\git\dodizhu\DouDiZhu\proj.win32\DouDiZhu.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:02.30
+已用时间 00:00:00.33
