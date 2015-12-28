@@ -86,12 +86,18 @@ bool GameScene::initBackGround(){
 	bool isRet = false;
 	do 
 	{	
-		CCSprite* bk = CCSprite::create("bk.png");
+		CCSprite* bk = CCSprite::create("dou.jpg",CCRect(50,680,800,450));
 		this->addChild(bk,0);
 		bk->setAnchorPoint(ccp(0,0));
+
+		/*CCSprite* p1 = CCSprite::create("dizhu.png",CCRect(0,0,208,238));
+		this->addChild(p1,1);
+		p1->setAnchorPoint(ccp(0,0));
+		p1->setScaleX(0.5);
+		p1->setScaleY(0.5);
+		*/
 		Music::GetInstance()->playSound("sound\\mg_bg.mp3",true);
 
-		//play2d("sound/mg_bg.ogg");
 		isRet = true;
 	} while (0);
 	return isRet;
@@ -162,13 +168,13 @@ bool GameScene::initPlayer(){
 	m_player->setPoint(ccp(size.width/2,size.height/6));
 	m_player->setPlayerClass(0);
 	//设置电脑1的位置
-	m_npcOne->setPoint(ccp(65,504));
+	m_npcOne->setPoint(ccp(65,304));
 	m_npcOne->setPlayerClass(1);
 	//设置电脑2的位置
-	m_npcTwo->setPoint(ccp(735,504));
+	m_npcTwo->setPoint(ccp(735,304));
 	m_npcTwo->setPlayerClass(1);
 	//设置三张牌的位置
-	m_Three->setPoint(ccp(size.width/2,504));
+	m_Three->setPoint(ccp(size.width/2,304));
 	m_Three->setPlayerClass(2);
 	//设置主玩家出牌的位置
 	m_playerOut->setPoint(ccp(size.width/2,size.height/6+106));
